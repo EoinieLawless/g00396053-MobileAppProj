@@ -1,12 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>weather</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="../home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Weather</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <h2 >Weather pp poo- report of galway</h2>
+<ion-img width="80" height="80" src="https://1.bp.blogspot.com/-2fJFGA7gM5o/WVrD7qiscxI/AAAAAAAADPQ/2Qsq-k36Hu8Q1bgDrhn00SBf91hTF5W3gCKgBGAs/w1200-h630-p-k-no-nu/galway-metropolitan-area-overview-map-summary.PNG"></ion-img>
 
-  {{galwayWeather.description}}
+<ion-content>
+ 
+  <h2 >Weather - report of galway</h2>
+
+ <ul>{{galwayWeather.description}}</ul>
+ <ul>Temperature:{{temps.temp}}</ul>
+ <ul>humidity:{{temps.humidity}}</ul>
+ <ul>sea level:{{temps.sea_level}} </ul>
+ <ul>Wind speed:{{winds.speed}} </ul>
+ <ul></ul>
+  
 
 </ion-content>
